@@ -75,7 +75,7 @@ img {
 
 /* #endregion*/
 
-/* #region top-line */
+/* #region header */
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -227,7 +227,7 @@ img {
     padding: 72px 24px 40px 16px;
     background-color: #fff;
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -236,7 +236,7 @@ img {
 .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
-    /*pointer-events: visible;*/
+    pointer-events: visible;
     transform: translateX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -332,7 +332,6 @@ img {
     align-items: center;
     gap: 40px;
 }
-
 /* #endregion */
 
 /* #region hero */
@@ -1002,7 +1001,7 @@ footer .logo-accent {
     z-index: 99999;
     background-color: rgba(46, 47, 66, 0.4);
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1010,8 +1009,8 @@ footer .logo-accent {
 
 .backdrop.is-open {
     opacity: 1;
-    visibility: visible;
-    pointer-events: visible;
+    visibility: hidden;
+    pointer-events: auto;
 }
 
 .modal {
@@ -1055,7 +1054,7 @@ footer .logo-accent {
     background-color: #e7e9fc;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
 .modal-close-icon {
     stroke: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
